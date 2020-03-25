@@ -15,7 +15,7 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 	text-transform: uppercase;
-	height: 100px;
+	height: 76px;
 }
 
 #Menu {
@@ -63,13 +63,17 @@ nav {
 
 a {
 	padding: 2em;
-	color: black;
+	color: #333;
 }
 
 /*--- Flex Elements ---*/
 
 #menuL a {
-	color: #bbb;
+	color: #333;
+}
+
+#menuL a:hover {
+	color: #337ab7;
 }
 
 /* Mobile Devices */
