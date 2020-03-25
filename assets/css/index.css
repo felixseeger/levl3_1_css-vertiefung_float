@@ -1,0 +1,131 @@
+/*--- Reset ---*/
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	transition: .2s;
+}
+
+nav {
+	font-family: "fira sans", sans serif;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-transform: uppercase;
+	height: 100px;
+}
+
+#Menu {
+	display: flex;
+	flex-flow: row wrap;
+	left: 0;
+	line-height: 1.8em;
+	justify-content: center;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1000;
+}
+
+#menuL {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+/*--- Flex container ---*/
+#menuF {
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	max-width: 1900px;
+	width: 100%;
+}
+
+#menuL {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.logo {
+	height: 100px;
+	width: 300px;
+	background: url('../img/logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position-y: center;
+}
+
+a {
+	padding: 2em;
+	color: black;
+}
+
+/*--- Flex Elements ---*/
+#toggle-menu {
+	border-bottom: 1px solid #4c4c4c;
+	cursor: pointer;
+	display: none;
+	text-align: center;
+	padding: .8em;
+	width: 100%;
+}
+#toggle-menu:hover {
+	animation: 2.5s blur 1;
+}
+#menuL a {
+	color: #bbb;
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+	#toggle-menu {
+		display: inline;
+	}
+	#toggle-menu:hover {
+		background-color: initial !important;
+	}
+	#menuF {
+		display: none;
+		justify-content: center;
+		text-align: center;
+		width: 100%;
+	}
+	#menuL {
+		width: 100%;
+	}
+	#menu a {
+		background-position: 0 5em;
+		border-top: 1px solid #3a3a3a;
+		border-bottom: 1px solid #3a3a3a;
+		font-size: .8em;
+		text-transform: uppercase;
+	}
+	#menu a:hover {
+		border-top: 1px solid aqua;
+		border-bottom: 1px solid aqua;
+	}
+	#active {
+		border-bottom: 1px solid #4c4c4c;
+	}
+	#searchF {
+		border-top: 1px solid #4c4c4c;
+		width: 100%;
+	}
+	.searchB {
+		margin: 3em auto;
+	}
+	.searchB:focus {
+		width: 13em !important;
+	}
+}
+@media (min-width: 600px) {
+	.of {
+		display: flex !important;
+	}
+}
