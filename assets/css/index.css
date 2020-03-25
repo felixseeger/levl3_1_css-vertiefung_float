@@ -67,17 +67,7 @@ a {
 }
 
 /*--- Flex Elements ---*/
-#toggle-menu {
-	border-bottom: 1px solid #4c4c4c;
-	cursor: pointer;
-	display: none;
-	text-align: center;
-	padding: .8em;
-	width: 100%;
-}
-#toggle-menu:hover {
-	animation: 2.5s blur 1;
-}
+
 #menuL a {
 	color: #bbb;
 }
